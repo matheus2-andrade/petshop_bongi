@@ -47,7 +47,7 @@ public class SaidaRepository implements IRepository<Saida> {
     private void loadFromFile() {
         File file = new File(FILE_PATH);
         if (!file.exists()) {
-            saveToFile(); // Cria o arquivo vazio se ele não existir
+            saveToFile();
         } else {
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_PATH))) {
                 saidas = (List<Saida>) ois.readObject();

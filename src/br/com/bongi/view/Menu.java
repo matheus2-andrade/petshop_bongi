@@ -1,5 +1,6 @@
 package br.com.bongi.view;
 
+import br.com.bongi.constants.Constants;
 import br.com.bongi.controller.PetController;
 import br.com.bongi.controller.SaidaController;
 
@@ -12,15 +13,7 @@ public class Menu {
     private Scanner scanner = new Scanner(System.in);
 
     private void mostrarArteAscii() {
-        System.out.println("\n" +
-                "  ____                        _   _____       _      _____         _               \n" +
-                " |  _ \\                      (_) |  __ \\     | |    / ____|       | |              \n" +
-                " | |_) |  ___   _ __    __ _  _  | |__) |___ | |_  | (___    __ _ | |  ___   _ __  \n" +
-                " |  _ <  / _ \\ | '_ \\  / _` || | |  ___// _ \\| __|  \\___ \\  / _` || | / _ \\ | '_ \\ \n" +
-                " | |_) || (_) || | | || (_| || | | |   |  __/| |_   ____) || (_| || || (_) || | | |\n" +
-                " |____/  \\___/ |_| |_| \\__, ||_| |_|    \\___| \\__| |_____/  \\__,_||_| \\___/ |_| |_|\n" +
-                "                        __/ |                                                      \n" +
-                "                       |___/                                                       \n");
+        System.out.print(Constants.ASCII_ART);
     }
 
     public void exibirMenu() {

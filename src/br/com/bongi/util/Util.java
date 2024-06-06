@@ -4,6 +4,4 @@ public class Util {
     public static void printSeparator() {
         System.out.println("----------------------------");
     }
-
-    // Outros métodos utilitários
 }
