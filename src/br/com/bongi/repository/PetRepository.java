@@ -38,7 +38,7 @@ public class PetRepository implements IRepository<Dog> {
 
     public Dog findByName(String name) {
         for (Dog pet : pets) {
-            if (pet.getNome().equals(name)) {
+            if (pet.getNome().equalsIgnoreCase(name)) {
                 return pet;
             }
         }
